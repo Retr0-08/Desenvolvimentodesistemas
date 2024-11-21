@@ -1,11 +1,12 @@
 /*desktop*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #202020;
     margin: 0;
     padding: 0;
+    
 }
-header,footer {
+footer {
     background: linear-gradient(90deg,#8a00e6,#02769d);
     color:#fff;
     padding: 25px;
@@ -14,18 +15,39 @@ header,footer {
     align-items: center;
     text-align: center; 
 }   
+header{
+    background: linear-gradient(90deg,#8a00e6,#02769d);
+    color:#fff;
+    padding: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 0; 
+}
+header.rolar{
+    background-color: #000000;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #000;
+    z-index: 2;
+}
     h1,h2{
 color:#fff;
     }
-
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 2rem 0;
 }
-.section {
+.section{
     margin-bottom: 2rem;
     color:#fff;
+}
+.intro{
+    font-size:x-large;
+    justify-content: center;
+    font-weight: 500;
+
 }
 .section h2 {
     border-bottom: 2px solid #bdbcbc;
@@ -59,6 +81,54 @@ p{
 .instagram{
     width: 50px;
     height: 50px;
+}
+.link button{
+    text-decoration: none;
+    font-size: 18px;
+    background-color:transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: #ffffff;
+    cursor: pointer;
+    transition: .5s;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    display: flex;
+    margin: 0 auto 10px auto;
+}
+.link button:hover{
+    text-decoration: none;
+    font-size: 18px;
+    background-color:white;
+    border: 2px solid rgb(255, 255, 255);
+    color: #000000;
+    cursor: pointer;
+    transition: .5s;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    display: flex;
+    margin: 0 auto 10px auto;
+}
+.jogo{
+    text-align: center;
+}
+.section .fotos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+.fotos .img img{
+   max-width: 480px;
+   border: 5px solid #8a00e6;
+}
+.fotos h3{
+    font-weight:800;
+}
+.fotos h3 span{
+    font-weight: 400;
 }
 /*768px*/
 @media (max-width: 768px) {
